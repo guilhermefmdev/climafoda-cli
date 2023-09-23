@@ -5,7 +5,7 @@ import requests
 
 API_KEY = "235f25f43ea1bc227e4712326f607acd"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-WEATHER_ICONS ={
+WEATHER_ICONS = {
     "01d": "☀️",
     "02d": "⛅️",
     "03d": "☁️",
@@ -26,8 +26,10 @@ WEATHER_ICONS ={
     "50n": "🌫",
 }
 
-parser = argparse.ArgumentParser(description="Check the weather for a certaint country/city")
-parser.add_argument("country", help="The country/city to check the weather for")
+parser = argparse.ArgumentParser(
+    description="Check the weather for a certaint country/city")
+parser.add_argument(
+    "country", help="The country/city to check the weather for")
 args = parser.parse_args()
 url = f"{BASE_URL}?q={args.country}&appid={API_KEY}&units=metric"
 
