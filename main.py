@@ -48,6 +48,7 @@ country = data["sys"]["country"]
 weather_icon = WEATHER_ICONS.get(icon, "")
 output = f"{pyfiglet.figlet_format(city)}, {country}\n\n"
 output += f"{weather_icon}  {description}\n"
+output += f"Temperature: {temperature}°C\n"
 output += f"Feels like: {feels_like}°C\n"
 
 print(chalk.green(output))
