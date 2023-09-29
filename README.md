@@ -6,4 +6,4 @@ Make sure to be using the `pipenv` virtualenv before running the application
 
 Run `python main.py [COUNTRY/CITY]` to check the weather in the coolest way possible
 
-obs: use `''` to evolve cities/countries names that have more than 2 words
+obs: use `''` to involve cities/countries names that have more than 2 words
