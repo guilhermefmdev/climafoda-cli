@@ -1,9 +1,12 @@
+import os
 import argparse
 import pyfiglet
 from simple_chalk import chalk
 import requests
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
 
-API_KEY = "235f25f43ea1bc227e4712326f607acd"
+API_KEY = os.environ.get("API_KEY")
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 WEATHER_ICONS = {
     "01d": "☀️",
