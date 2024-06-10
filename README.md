@@ -1,4 +1,3 @@
-If you too cool for cheking the weather the common way, this is for you!
 
 # How to run
 Make sure to be using the `pipenv` virtualenv before running the application
